@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Poppins:wght@300&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #3C486B;
+
+}
+#seleccionar-mascota {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.titulo {
+    font-family: 'Lilita One', cursive;
+    color:white;
+    font-size: 32px;
+
+}
+
+.subtitulo {
+    color: yellow;
+    font-size: 20px;
+}
+
+.tarjetas, .tarjetas-ataques {
+    display: flex;
+    gap: 10px;
+}
+
+.tarjeta-de-mokepon {
+    width: 165px;
+    height: 100px;
+    background: #F0F0F0;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #F45050;
+    cursor: pointer;
+}
+
+.tarjeta-de-mokepon img {
+    width: 80px;
+}
+
+#boton-mascota {
+    border-radius: 20px;
+    width: 180px;
+    height: 44px;
+    color: yellow;
+    background: transparent;
+    border: 2px solid #F45050;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+input {
+    display: none;
+}
+
+input:checked + label {
+    background: yellow;
+
+}
+
+#seleccionar-ataque {
+    flex-direction: column;
+    align-items: center;
+}
+
+.boton-ataque {
+    cursor: pointer;
+    margin: 20px 5px 20px 5px;
+    width: 100px;
+    height: 50px;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    background-color: #f0f0f0;
+    color: #3C486B;
+    border-color:#F45050;
+    font-family: 'Lilita One', cursive;
+}
+
+#mensajes {
+    width: 250px;
+    background: #3C486B;
+    color: #F45050;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 20px;
+    border: 2px solid yellow;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+}
+
+#boton-reiniciar {
+    border: none;
+    color: #3C486B;
+    background: #F0F0F0;
+    font-family: 'Lilita One', cursive;
+    cursor: pointer;
+}
+
+.ataques {
+    display: grid;
+    grid-template-columns: 100px 100px;
+    color:#F0F0F0
+}
+
+#vidas-jugador, #vidas-enemigo {
+    font-size: 32px;
+    margin-bottom: 0;
+}
+
+.ataques-jugador, .ataques-enemigo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#ver-mapa {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#ver-mapa button {
+    border-radius: 20px;
+    width: 80px;
+    height: 44px;
+    color: yellow;
+    background: transparent;
+    border: 2px solid #F45050;
+    font-family: 'Poppins', sans-serif;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+@media (max-width: 560px) {
+    .tarjetas, .tarjetas-ataques {
+        flex-direction: column;
+    }
+  }
+
+  @media (max-width: 300px) {
+    #ver-mapa div{
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+  }
+
